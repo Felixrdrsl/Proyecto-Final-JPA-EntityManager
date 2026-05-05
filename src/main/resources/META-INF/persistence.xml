@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence"
-             xsi="http://www.w3.org/2001/XMLSchema-instance"
-             schemaLocation="https://jakarta.ee/xml/ns/persistence
-https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
              version="3.2">
     <persistence-unit name="restaurantes_db" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.restaurantes.modelo.Restaurante</class>
-        <class>com.restaurantes.modelo.Mesa</class>
-        <class>com.restaurantes.modelo.Cliente</class>
-        <class>com.restaurantes.modelo.Reserva</class>
-        <class>com.restaurantes.modelo.EstadoReserva</class>
+        <class>modelo.Restaurante</class>
+        <class>modelo.Mesa</class>
+        <class>modelo.Cliente</class>
+        <class>modelo.Reserva</class>
+        <class>modelo.EstadoReserva</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver"
                       value="com.mysql.cj.jdbc.Driver"/>

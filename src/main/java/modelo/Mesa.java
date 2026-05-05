@@ -42,14 +42,8 @@ public class Mesa {
         sb.append("ID: ").append(id)
                 .append(" | Mesa ").append(numero)
                 .append(" | Capacidad: ").append(capacidad)
-                .append(" | Terraza: ").append(terraza ? "Sí" : "No")
-                .append(" | ");
-        if (restaurante != null) {
-            sb.append(restaurante.getNombre());
-        } else {
-            sb.append("Sin restaurante");
-        }
-
+                .append(" | Terraza: ").append(terraza).append(" | ")
+                .append(restaurante.getNombre());
         return sb.toString();
     }
 
